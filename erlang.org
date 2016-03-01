@@ -1,0 +1,30 @@
+erlang 语言:高容错,并发,分布式
+
+常用模块:lists io file dict gen_tcp
+运用makefile来控制编译和执行
+灵活运用扩展库OTP,利用各种OTP行为(behavior)
+
+erlang 面向并发编程
+Mnesia：erlang的发行版包含的内置的,完整的,快速的,可复制的数据库
+运用OTP行为(behavior)来构建监控树(supervision tree)和启动脚本(start script)
+运行和优化程序
+
+变量:变量不可变
+x = 23 变量x将绑定(匹配)23,x将不可改变
+原子:用来表示不同的非数字常量值,是全局有效的,而且无需使用宏定义或包含文件
+原子是一串以小写字母开头,后跟数字字母或下划线或邮件符号的字符或使用单引号的字符
+
+数值(整数和浮点数):101 -101 10.9999
+二进制串/位串:<<0,1,2,...,255>> <<"hello", 32, "dude">>
+原子 : ok error foo  'Abc' '$#@'
+元组{1,2,3} {one, two, three} {from, "Russia"} {}
+列表(和字符串): [] [1,2,3] [{tomorrom,"buy"}, {sonn, "fix trap"}]
+唯一标识符(pid 端口 引用)
+Fun函数
+
+
+行为模式的接口是一组特定的函数和相关的调用规范.
+gen_server行为模式的接口包含六个函数:
+init/1 handle_call/3 handle_cast/2 handle_info/2 terminate/2
+和code_change/3
+
